@@ -1,0 +1,518 @@
+/* ==========================================================================
+   Fiducial, folha de estilo compartilhada.
+   Saiu de dentro do index.html em 4 de agosto de 2026, quando o site deixou
+   de ser uma pagina so. Todas as paginas usam este mesmo arquivo, entao
+   qualquer ajuste aqui vale para o site inteiro.
+   ========================================================================== */
+/* A Urbanist fica hospedada junto do site. Antes vinha do Google Fonts, que
+   custava duas conexões externas e uma folha de estilo que trava a pintura. */
+@font-face{font-family:'Urbanist';font-style:normal;font-weight:400;font-display:swap;src:url('fontes/urbanist-400.woff2') format('woff2')}
+@font-face{font-family:'Urbanist';font-style:normal;font-weight:500;font-display:swap;src:url('fontes/urbanist-500.woff2') format('woff2')}
+@font-face{font-family:'Urbanist';font-style:normal;font-weight:600;font-display:swap;src:url('fontes/urbanist-600.woff2') format('woff2')}
+@font-face{font-family:'Urbanist';font-style:normal;font-weight:700;font-display:swap;src:url('fontes/urbanist-700.woff2') format('woff2')}
+/* ============================================================
+   FIDUCIAL | Landing Crédito Consignado
+   Paleta institucional oficial (extraída de fiducial.com.br):
+   #0A0A0A  #2B2B2B  #686868  #D5D8DC  #FFFFFF  #AB2024
+   Fonte: Urbanist, geometrica e minimalista
+   ============================================================ */
+:root{
+  --ink:#0a0a0a;
+  --graphite:#2b2b2b;
+  --graphite-soft:#3d3d3d;
+  --grey:#686868;
+  --grey-light:#9b9ea1;
+  --line:#d5d8dc;
+  --paper:#f3f4f5;
+  --white:#ffffff;
+  --red:#ab2024;
+  --red-dark:#8e1a1e;
+  --red-soft:rgba(171,32,36,.09);
+  /* Superfície das faixas de destaque: cabeçalho, barra de números, atendimento e rodapé.
+     Os cinzas claros #A9A9A9 e #808080 foram testados e descartados, voltou o grafite.
+     Para testar outro fundo, troque estas seis linhas e nada mais no arquivo. */
+  --faixa:#2b2b2b;
+  --faixa-titulo:#ffffff;
+  --faixa-texto:rgba(255,255,255,.82);
+  --faixa-suave:rgba(255,255,255,.68);
+  --faixa-linha:rgba(255,255,255,.09);
+  --faixa-cartao:rgba(255,255,255,.05);
+  --font-display:'Urbanist',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --font-body:'Urbanist',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --shadow:0 1px 2px rgba(10,10,10,.04),0 10px 28px rgba(10,10,10,.07);
+  --radius:14px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  color:var(--graphite);
+  background:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.16;text-wrap:balance;letter-spacing:-.025em;color:var(--ink)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{
+  font-family:var(--font-display);font-weight:700;font-size:.74rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--red);
+  display:inline-block;
+}
+.section{padding:96px 0}
+.section-head{max-width:660px;margin-bottom:56px}
+.section-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:600;margin:16px 0 14px}
+.section-head p{color:var(--grey);font-size:1.06rem}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.on-dark h2,.on-dark h3,.on-dark h4{color:var(--faixa-titulo)}
+
+/* ---------- Botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--font-display);font-weight:700;font-size:.98rem;
+  padding:15px 28px;border-radius:10px;cursor:pointer;border:2px solid transparent;
+  transition:transform .15s ease,background .2s ease,box-shadow .2s ease,border-color .2s ease;
+  white-space:nowrap;
+}
+.btn svg{width:19px;height:19px;flex:none;fill:currentColor}
+.btn-red{background:var(--red);color:var(--white)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 10px 22px rgba(171,32,36,.3)}
+.btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.3)}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,.07)}
+.btn-outline{background:transparent;color:var(--graphite);border-color:var(--line)}
+.btn-outline:hover{border-color:var(--red);color:var(--red)}
+.btn-lg{padding:17px 34px;font-size:1.05rem}
+.btn-block{width:100%}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:60;background:var(--faixa);
+  border-bottom:1px solid var(--faixa-linha);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.logo{display:flex;align-items:center;flex:none}
+.logo img{height:42px;width:auto;display:block}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:.95rem;font-weight:500;color:var(--faixa-texto);transition:color .2s}
+.nav-links a:hover{color:var(--faixa-titulo)}
+.nav-right{display:flex;align-items:center;gap:16px}
+
+/* Botão de três linhas. Fica escondido no desktop, onde o menu já está à mostra */
+.nav-abrir{
+  display:none;background:none;border:0;cursor:pointer;padding:10px 4px;
+  flex-direction:column;justify-content:center;gap:5px;width:34px;
+}
+.nav-abrir span{
+  display:block;height:2px;width:24px;background:var(--faixa-texto);border-radius:2px;
+  transition:transform .22s ease,opacity .18s ease;
+}
+header.menu-aberto .nav-abrir span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+header.menu-aberto .nav-abrir span:nth-child(2){opacity:0}
+header.menu-aberto .nav-abrir span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-abrir:focus-visible{outline:2px solid var(--white);outline-offset:2px;border-radius:4px}
+.nav-phone{font-family:var(--font-display);font-weight:700;font-size:.95rem;color:var(--faixa-titulo);white-space:nowrap}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;color:var(--graphite);overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 85% 0%,rgba(171,32,36,.10),transparent 62%),
+    linear-gradient(180deg,#fff,var(--paper));
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(10,10,10,.045) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(10,10,10,.045) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:linear-gradient(180deg,#000,transparent 88%);
+}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.82fr);
+  /* padding-block, e não padding, para não apagar o recuo lateral que vem do .wrap */
+  gap:48px;align-items:center;padding-block:96px 104px;position:relative;z-index:2;
+}
+.hero-conteudo{max-width:660px}
+
+.hero h1{font-size:clamp(2.4rem,5vw,3.9rem);font-weight:600;margin:0 0 22px;color:var(--ink);line-height:1.08}
+.hero h1 .hl{position:relative;white-space:nowrap;z-index:1}
+.hero h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:.05em;height:.16em;background:var(--red);z-index:-1}
+.hero p.lead{font-size:1.18rem;color:var(--grey);max-width:580px}
+
+.hero-cta{display:flex;gap:14px;margin:36px 0 14px;flex-wrap:wrap;align-items:center}
+.btn-simular{
+  padding:20px 42px;font-size:1.15rem;border-radius:12px;
+  box-shadow:0 0 0 0 rgba(171,32,36,.6);animation:chamar 2.6s ease-out infinite;
+}
+.btn-simular:hover{animation:none}
+@keyframes chamar{
+  0%{box-shadow:0 0 0 0 rgba(171,32,36,.55)}
+  70%{box-shadow:0 0 0 20px rgba(171,32,36,0)}
+  100%{box-shadow:0 0 0 0 rgba(171,32,36,0)}
+}
+/* O .btn-ghost padrão é branco, feito para as faixas escuras. Em fundo claro
+   ele some: texto branco sobre o papel dá 1,10 de contraste. Estas duas linhas
+   valem para o topo da home e para o topo das páginas de modalidade.
+   Se aparecer um botão fantasma em fundo claro em outro lugar, o seletor dele
+   entra aqui, e não numa regra nova. */
+.hero .btn-ghost,
+.mod-hero .btn-ghost{color:var(--graphite);border-color:var(--line)}
+.hero .btn-ghost:hover,
+.mod-hero .btn-ghost:hover{border-color:var(--red);color:var(--red);background:transparent}
+.hero-obs{font-size:.88rem;color:var(--grey);margin-bottom:26px}
+
+/* Prova social */
+.prova{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:26px;
+  padding-top:24px;border-top:1px solid var(--line)}
+.prova .item{display:flex;align-items:center;gap:10px}
+.prova .item b{font-family:var(--font-display);font-weight:600;font-size:1.32rem;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.prova .item span{font-size:.8rem;color:var(--grey);line-height:1.3;display:block}
+
+.hero-chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:500;
+  color:var(--graphite);background:var(--white);
+  border:1px solid var(--line);padding:8px 14px;border-radius:100px;
+}
+.chip svg{width:15px;height:15px;flex:none}
+
+/* Lado direito: imagem recortada, sem fundo */
+/* As margens negativas devolvem o respiro do grid, em cima e embaixo, para a foto
+   ocupar a coluna inteira, encostando na barra de números e subindo até o cabeçalho */
+.hero-figura{
+  position:relative;display:flex;align-items:flex-end;justify-content:center;
+  min-height:420px;margin-top:-72px;margin-bottom:-116px;align-self:stretch;
+  /* avança 40px para a direita, sobre a folga da página, para a foto ganhar
+     largura sem apertar o texto. O topo tem overflow hidden, então nada escapa */
+  margin-right:-40px;
+}
+.hero-figura picture{display:contents}
+.hero-figura img{
+  /* Altura 100% da coluna esticada: a foto acompanha o tamanho do bloco de texto,
+     em vez de depender de um número fixo que desalinha quando o título quebra diferente */
+  width:100%;height:100%;display:block;flex:none;
+  object-fit:contain;object-position:bottom center;
+  filter:drop-shadow(0 18px 26px rgba(10,10,10,.14));
+}
+.hero-figura::before{
+  content:"";position:absolute;top:4%;width:86%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(171,32,36,.16),transparent 66%);z-index:-1;
+}
+
+/* ---------- Stats ---------- */
+.stats{background:var(--faixa)}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);text-align:center}
+.stat{padding:46px 20px;border-right:1px solid var(--faixa-linha)}
+.stat:last-child{border-right:none}
+.stat .num{font-family:var(--font-display);font-weight:600;font-size:2.5rem;color:var(--faixa-titulo);font-variant-numeric:tabular-nums;line-height:1}
+.stat .num .u{color:var(--red)}
+.stat .lbl{font-size:.86rem;color:var(--faixa-suave);margin-top:8px}
+
+/* ---------- Bancos parceiros ---------- */
+.banks{background:var(--paper);padding:80px 0;border-block:1px solid var(--line)}
+.banks .head{text-align:center;max-width:640px;margin:0 auto 44px}
+.banks .head h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;margin:14px 0 12px}
+.banks .head p{color:var(--grey)}
+.marquee{position:relative;overflow:hidden;
+  /* Folga interna para o card subir no hover sem ser cortado pelo overflow.
+     A margem negativa devolve o espaço, mantendo o layout igual. */
+  padding:30px 0;margin:-30px 0;
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.marquee-track{
+  display:flex;width:max-content;gap:18px;
+  /* O passo do laço é a largura exata de uma volta da lista. O valor abaixo é
+     só o padrão; o JavaScript mede a distância real e sobrescreve. Antes isso
+     era calc(-50% - 9px), que dependia de o navegador calcular a largura do
+     trilho igualzinho, e qualquer diferença aparecia como tranco na emenda. */
+  --passo:3052px;
+  animation:slide 38s linear infinite;
+  will-change:transform;
+}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes slide{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(calc(var(--passo) * -1),0,0)}
+}
+.bank{
+  flex:none;width:200px;height:100px;background:var(--white);border:1px solid var(--line);
+  border-radius:12px;display:flex;align-items:center;justify-content:center;
+  padding:14px 18px;overflow:hidden;
+  transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease;
+}
+.bank:hover{border-color:var(--grey);transform:translateY(-3px);box-shadow:var(--shadow)}
+.bank img{
+  /* a imagem ocupa exatamente a caixa do card e o object-fit cuida da proporção.
+     Assim ela não tem como vazar para fora, aconteça o que acontecer com o
+     dimensionamento intrínseco, que é onde o Safari costuma divergir */
+  width:100%;height:100%;flex:none;object-fit:contain;
+  filter:grayscale(1) contrast(1.05);opacity:.85;
+  transition:opacity .25s ease,transform .25s ease;
+}
+.bank:hover img{opacity:1}
+/* Logos que vêm com muita margem vazia dentro do arquivo */
+.bank img.folgado{transform:scale(1.5)}
+.bank:hover img.folgado{transform:scale(1.56)}
+.bank .wordmark{
+  font-family:var(--font-display);font-weight:700;font-size:1.06rem;color:var(--grey);
+  letter-spacing:-.01em;text-align:center;line-height:1.2;transition:color .25s ease;
+}
+.bank:hover .wordmark{color:var(--ink)}
+.banks .foot{text-align:center;margin-top:38px;font-size:.9rem;color:var(--grey)}
+
+/* ---------- Cards / Modalidades ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+/* são sete modalidades, então a última fica sozinha na terceira linha.
+   Esta regra joga ela para a coluna do meio em vez de deixar de canto */
+.cards .card:last-child:nth-child(3n+1){grid-column:2}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+  position:relative;overflow:hidden;cursor:pointer;display:block;
+}
+.card::before{content:"";position:absolute;top:0;left:0;width:0;height:3px;background:var(--red);transition:width .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--grey-light)}
+.card:hover::before{width:100%}
+.card .ic{width:46px;height:46px;border-radius:11px;background:var(--red-soft);color:var(--red);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.card .ic svg{width:24px;height:24px}
+.card h3{font-size:1.18rem;font-weight:600;margin-bottom:8px}
+.card p{color:var(--grey);font-size:.96rem}
+.card .go{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-family:var(--font-display);font-weight:700;font-size:.88rem;color:var(--red)}
+.card .go svg{width:16px;height:16px;fill:currentColor}
+
+/* ---------- Vantagens ---------- */
+.adv{background:var(--paper)}
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 40px}
+.adv-item{display:flex;gap:16px;align-items:flex-start;padding:6px 0}
+.adv-item .ic{width:42px;height:42px;flex:none;border-radius:10px;background:var(--white);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--red)}
+.adv-item .ic svg{width:22px;height:22px}
+.adv-item h4{font-size:1.04rem;font-weight:600;margin-bottom:3px}
+.adv-item p{font-size:.92rem;color:var(--grey)}
+
+/* ---------- Como funciona ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.step{position:relative;padding-top:14px}
+.step .n{font-family:var(--font-display);font-weight:600;font-size:2.6rem;color:var(--paper);line-height:1;-webkit-text-stroke:1px var(--line)}
+.step h4{font-size:1.08rem;font-weight:600;margin:10px 0 6px}
+.step p{font-size:.93rem;color:var(--grey)}
+.step::after{content:"";position:absolute;top:26px;left:64px;right:-12px;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 12px)}
+.step:last-child::after{display:none}
+
+/* ---------- Faixa de CTA ---------- */
+.band{
+  background:radial-gradient(900px 400px at 18% 0%,rgba(171,32,36,.26),transparent 62%),
+             linear-gradient(120deg,var(--ink),var(--graphite));
+  border-radius:22px;padding:56px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;
+}
+.band h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;max-width:620px;color:var(--white)}
+.band p{color:rgba(255,255,255,.8);margin-top:10px;max-width:560px}
+
+/* ---------- Faixa de quebra ---------- */
+.quebra{
+  position:relative;overflow:hidden;background:var(--graphite);
+  background-image:url("quebra.webp");background-size:cover;background-position:center right;
+}
+.quebra::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(43,43,43,.96) 0%,rgba(43,43,43,.9) 38%,rgba(43,43,43,.5) 72%,rgba(43,43,43,.3) 100%);
+}
+.quebra .wrap{position:relative;z-index:2}
+.quebra-texto{max-width:34rem;padding:88px 0}
+.quebra-texto .eyebrow{color:var(--white)}
+.quebra-texto h2{color:var(--white);font-size:clamp(1.45rem,2.6vw,2rem);font-weight:600;margin:14px 0 14px}
+.quebra-texto p{color:rgba(255,255,255,.72);font-size:.98rem}
+
+/* ---------- Atendimento ---------- */
+.contact{background:var(--faixa);color:rgba(255,255,255,.78)}
+.contact .section-head p{color:rgba(255,255,255,.7)}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:22px}
+.cbox{
+  background:var(--faixa-cartao);border:1px solid var(--faixa-linha);
+  border-radius:var(--radius);padding:30px;transition:border-color .25s ease,background .25s ease,transform .25s ease;
+}
+.cbox:hover{border-color:var(--red);background:rgba(171,32,36,.1);transform:translateY(-4px)}
+.cbox .ic{width:46px;height:46px;border-radius:11px;background:var(--red);color:var(--white);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.cbox .ic svg{width:23px;height:23px;fill:currentColor}
+.cbox h3{font-size:1.14rem;font-weight:600;margin-bottom:7px;color:var(--faixa-titulo)}
+.cbox p{font-size:.93rem;color:var(--faixa-suave);margin-bottom:18px}
+.cbox .num{font-family:var(--font-display);font-weight:700;font-size:1.22rem;color:var(--faixa-titulo);margin-bottom:16px;letter-spacing:.01em}
+.contact-strip{
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  background:var(--faixa-cartao);border:1px solid var(--faixa-linha);border-radius:var(--radius);padding:26px 30px;
+}
+.contact-strip .item{display:flex;align-items:center;gap:13px}
+.contact-strip .item svg{width:21px;height:21px;stroke:var(--red);fill:none;stroke-width:2;flex:none}
+.contact-strip .item b{display:block;color:var(--faixa-titulo);font-family:var(--font-display);font-size:.98rem}
+.contact-strip .item span{font-size:.84rem;color:rgba(255,255,255,.6)}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:820px;margin:0 auto}
+.acc{border-bottom:1px solid var(--line)}
+.acc button{
+  width:100%;background:none;border:none;cursor:pointer;text-align:left;
+  padding:22px 4px;font-family:var(--font-display);font-weight:600;font-size:1.05rem;color:var(--ink);
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+}
+.acc button:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
+.acc .plus{flex:none;width:26px;height:26px;border-radius:50%;background:var(--red-soft);color:var(--red);display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:transform .25s}
+.acc.open .plus{transform:rotate(45deg)}
+.acc .ans{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.acc .ans p{padding:0 4px 22px;color:var(--grey);font-size:.98rem}
+
+/* ---------- Rodapé ---------- */
+footer{background:var(--faixa);color:var(--faixa-texto);padding:70px 0 30px;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--faixa-linha)}
+.foot-grid .logo{margin-bottom:18px}
+.foot-grid .logo img{height:48px}
+.foot-col h5{font-family:var(--font-display);color:var(--faixa-titulo);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:16px}
+.foot-col a,.foot-col p{display:block;color:rgba(255,255,255,.66);margin-bottom:10px;transition:color .2s}
+.foot-col a:hover{color:var(--faixa-titulo)}
+/* o fundo grafite é mais claro que o preto original do rodapé, então o texto miúdo
+   ficou um pouco mais opaco para não cair abaixo de 4,5 de contraste */
+.foot-legal{padding-top:26px;font-size:.78rem;color:rgba(255,255,255,.52);line-height:1.7}
+.foot-legal .bar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:18px;color:rgba(255,255,255,.56)}
+
+/* ---------- WhatsApp flutuante ---------- */
+.wa-float{
+  position:fixed;bottom:24px;right:24px;z-index:90;display:flex;align-items:center;gap:11px;
+  background:var(--red);color:var(--white);padding:14px 20px 14px 16px;border-radius:100px;
+  box-shadow:0 12px 32px rgba(171,32,36,.42);font-family:var(--font-display);font-weight:700;font-size:.95rem;
+  transition:transform .2s ease,background .2s ease;
+}
+.wa-float:hover{background:var(--red-dark);transform:translateY(-3px)}
+.wa-float svg{width:26px;height:26px;fill:var(--white);flex:none}
+.wa-float span{white-space:nowrap}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .marquee-track{animation:none;transform:none}
+  .btn-simular{animation:none}
+  .nav-abrir span,.nav-links{transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- Responsivo ---------- */
+@media(max-width:940px){
+  .hero-grid{grid-template-columns:1fr;gap:32px;padding-block:64px 80px}
+  .hero-conteudo{max-width:none}
+  /* No celular a foto vai para baixo do texto, encostada na barra de números,
+     do mesmo jeito que no desktop. Assim o título abre a página. */
+  .hero-figura{min-height:0;order:0;margin:0 0 -80px;align-self:end}
+  .hero-figura img{height:340px}
+  .hero-figura::before{width:62%;top:6%}
+  .cards,.contact-grid{grid-template-columns:1fr 1fr}
+  .cards .card:last-child:nth-child(3n+1){grid-column:auto}
+  .quebra-texto{padding:64px 0;max-width:none}
+  .quebra{background-position:center right -80px}
+  .quebra::before{background:linear-gradient(90deg,rgba(43,43,43,.96) 0%,rgba(43,43,43,.9) 55%,rgba(43,43,43,.62) 100%)}
+  .adv-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:32px}
+  .step::after{display:none}
+
+  /* O menu vira painel que desce por baixo do cabeçalho */
+  .nav-abrir{display:flex}
+  .nav-links{
+    display:block;position:absolute;top:100%;left:0;right:0;
+    background:var(--faixa);border-bottom:1px solid var(--faixa-linha);
+    padding:0 24px;max-height:0;overflow:hidden;visibility:hidden;
+    transition:max-height .26s ease;
+  }
+  header.menu-aberto .nav-links{max-height:22rem;visibility:visible}
+  .nav-links li{border-top:1px solid var(--faixa-linha)}
+  .nav-links li:first-child{border-top:0}
+  .nav-links a{display:block;padding:16px 0;font-size:1rem}
+}
+@media(max-width:680px){
+  .section,.banks{padding:64px 0}
+  .nav-phone{display:none}
+  .logo img{height:34px}
+  /* no celular o botão do cabeçalho encolhe, para sobrar espaço para a marca */
+  .nav-right{gap:6px}
+  header .btn{padding:11px 15px;font-size:.84rem;gap:8px;border-radius:8px}
+  header .btn svg{width:17px;height:17px}
+  .foot-grid .logo img{height:40px}
+  .cards,.adv-grid,.steps,.stats-grid,.contact-grid{grid-template-columns:1fr}
+  .stat{border-right:none;border-bottom:1px solid var(--faixa-linha)}
+  .stat:last-child{border-bottom:none}
+  .band{padding:36px 26px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hero-cta .btn{flex:1 1 100%}
+  .btn-simular{padding:18px 28px;font-size:1.05rem}
+  .prova{gap:18px}
+  .wa-float span{display:none}
+  .wa-float{padding:16px;border-radius:50%}
+  .quebra-texto{padding:52px 0}
+  .quebra::before{background:linear-gradient(180deg,rgba(43,43,43,.94) 0%,rgba(43,43,43,.88) 100%)}
+}
+/* ==========================================================================
+   SIMULADOR DE CREDITO
+   Adicionado em 4 de agosto de 2026. O markup nao fica no HTML: o script.js
+   desenha tudo dentro de um <div data-simulador></div>, para as paginas de
+   modalidade nao carregarem copia do mesmo bloco.
+   Nao existe <form> aqui de proposito. Nada e enviado, nada e guardado, e a
+   CSP do servidor bloqueia envio de formulario com form-action 'none'.
+   ========================================================================== */
+.sim-wrap{max-width:840px;margin:0 auto}
+.sim-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px 26px}
+.sim-tabs{display:flex;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:6px;margin-bottom:26px}
+.sim-tab{flex:1;border:0;background:transparent;font:700 15px/1.25 var(--font-display);color:var(--grey);padding:15px 8px;border-radius:9px;cursor:pointer;transition:background .18s,color .18s}
+.sim-tab[aria-selected="true"]{background:var(--red);color:var(--white)}
+.sim-campos{display:grid;gap:24px}
+.sim-rot{display:block;font:600 15px/1.3 var(--font-display);color:var(--ink);margin-bottom:10px}
+.sim-select{width:100%;font:500 17px/1.3 var(--font-body);color:var(--ink);background:var(--white);border:1px solid var(--line);border-radius:10px;padding:15px 14px;appearance:none;cursor:pointer}
+.sim-select:focus-visible,.sim-tab:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.sim-valor{display:flex;align-items:baseline;gap:8px;font:800 34px/1 var(--font-display);color:var(--ink)}
+.sim-valor span{font-size:19px;font-weight:600;color:var(--grey)}
+.sim-faixa{width:100%;margin-top:14px;accent-color:var(--red);height:26px;cursor:pointer}
+.sim-limites{display:flex;justify-content:space-between;font:500 13px/1.3 var(--font-body);color:var(--grey);margin-top:2px}
+.sim-res{background:var(--faixa);border-radius:12px;padding:26px 24px;margin-top:28px;color:var(--faixa-titulo)}
+.sim-res-rot{font:600 14px/1.3 var(--font-display);color:var(--faixa-suave);letter-spacing:.04em;text-transform:uppercase}
+.sim-res-num{font:800 42px/1.05 var(--font-display);margin:8px 0 18px}
+.sim-linhas{display:grid;gap:10px;border-top:1px solid var(--faixa-linha);padding-top:16px}
+.sim-linha{display:flex;justify-content:space-between;gap:16px;font:500 15px/1.4 var(--font-body);color:var(--faixa-texto)}
+.sim-linha b{font-weight:700;color:var(--faixa-titulo)}
+.sim-cta{margin-top:22px}
+.sim-aviso{font:500 13px/1.6 var(--font-body);color:var(--grey);margin-top:18px}
+@media(max-width:640px){
+  .sim-card{padding:22px 18px}
+  .sim-tab{font-size:14px;padding:14px 6px}
+  .sim-valor{font-size:29px}
+  .sim-res-num{font-size:34px}
+}
+/* ==========================================================================
+   PAGINAS DE MODALIDADE
+   Adicionado em 4 de agosto de 2026. O topo destas paginas e de texto, sem
+   foto, de proposito: sao oito paginas e cada foto nova seria mais peso para
+   carregar e mais uma imagem para o cliente aprovar.
+   ========================================================================== */
+.mod-hero{background:var(--paper);border-bottom:1px solid var(--line);padding:30px 0 62px}
+.crumb{font:500 14px/1.4 var(--font-body);color:var(--grey);margin-bottom:28px}
+.crumb a{color:var(--grey);text-decoration:none}
+.crumb a:hover{color:var(--red)}
+.crumb b{font-weight:600;color:var(--ink)}
+.mod-hero h1{font:800 clamp(30px,4.6vw,46px)/1.14 var(--font-display);color:var(--ink);max-width:20ch}
+.mod-hero .lead{font:500 clamp(17px,2vw,20px)/1.6 var(--font-body);color:var(--grey);max-width:62ch;margin-top:18px}
+.mod-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.lista-req{display:grid;gap:15px;margin:0;padding:0}
+.lista-req li{display:flex;gap:13px;align-items:flex-start;list-style:none;font:500 17px/1.55 var(--font-body);color:var(--graphite)}
+.lista-req svg{flex:none;width:21px;height:21px;fill:var(--red);margin-top:4px}
+@media(max-width:880px){
+  .duas{grid-template-columns:1fr;gap:34px}
+  .mod-hero{padding:24px 0 46px}
+}
+/* Aviso de simulacao, logo abaixo do resultado.
+   Amarelo de alerta seria cor de fora da paleta, entao usa o vermelho
+   institucional em fundo suave, que ja existe como token --red-soft. */
+.sim-alerta{display:flex;gap:12px;align-items:flex-start;background:var(--red-soft);border:1px solid rgba(171,32,36,.22);border-radius:10px;padding:16px 18px;margin-top:20px}
+.sim-alerta svg{flex:none;width:21px;height:21px;fill:var(--red);margin-top:2px}
+.sim-alerta p{font:500 15px/1.55 var(--font-body);color:var(--graphite);margin:0}
+.sim-alerta b{font-weight:700;color:var(--ink)}
+@media(max-width:640px){
+  .sim-alerta{padding:14px 15px;gap:10px}
+  .sim-alerta p{font-size:14px}
+}

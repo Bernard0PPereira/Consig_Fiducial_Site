@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lpvendas.idr8iq.easypanel.host/sitemap.xml

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fiducial | Crédito Consignado INSS, Servidor e Militar</title>
+<meta name="description" content="Simule crédito consignado pelo WhatsApp com a Fiducial. Comparamos catorze instituições para achar a menor taxa, para aposentados, pensionistas, servidores públicos e militares. Sem sair de casa." />
+
+<!-- ATENÇÃO: as três linhas abaixo precisam do domínio próprio.
+     Enquanto ele não existir, ficam apontando para o endereço da hospedagem. -->
+<link rel="canonical" href="https://lpvendas.idr8iq.easypanel.host/" />
+<meta property="og:url" content="https://lpvendas.idr8iq.easypanel.host/" />
+<meta property="og:image" content="https://lpvendas.idr8iq.easypanel.host/previa.jpg" />
+
+<!-- Prévia do link. O negócio inteiro roda no WhatsApp, e sem isto o endereço
+     colado numa conversa aparece sem imagem e sem título. -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Fiducial Consultoria e Serviços" />
+<meta property="og:title" content="Crédito consignado sem burocracia e sem sair de casa" />
+<meta property="og:description" content="Comparamos catorze instituições para achar a menor taxa. Simulação gratuita pelo WhatsApp, para aposentados, pensionistas, servidores e militares." />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Crédito consignado Fiducial" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="theme-color" content="#2b2b2b" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<!-- Ícones oficiais da Fiducial, os mesmos do site institucional -->
+<link rel="icon" href="favicon.ico" sizes="32x32" />
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
+<link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<link rel="preload" href="fontes/urbanist-600.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="hero.webp" as="image" type="image/webp" fetchpriority="high" />
+<link rel="stylesheet" href="estilo.css" />
+
+<!-- Dados estruturados. Servem para o Google entender que empresa é esta e para
+     habilitar as perguntas aparecerem abertas no resultado de busca.
+     PENDENTE: telefone e endereço estão com placeholder, trocar junto com o
+     restante dos contatos. Sem telefone verificável, tirar a linha telephone. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FinancialService",
+      "@id": "https://lpvendas.idr8iq.easypanel.host/#empresa",
+      "name": "Fiducial Consultoria e Serviços",
+      "url": "https://lpvendas.idr8iq.easypanel.host/",
+      "description": "Correspondente bancário especializado em crédito consignado para aposentados e pensionistas do INSS, servidores públicos e militares.",
+      "taxID": "22.440.788/0001.90",
+      "areaServed": { "@type": "Country", "name": "Brasil" },
+      "availableLanguage": "pt-BR",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Modalidades de crédito consignado",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Consignado INSS" } },
+          { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Consignado para servidor público" } },
+          { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Consignado militar" } },
+          { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Portabilidade de consignado" } },
+          { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Refinanciamento de consignado" } },
+          { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Cartão benefício" } },
+          { "@type": "Offer", "itemOffered": { "@type": "LoanOrCredit", "name": "Cartão consignado" } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lpvendas.idr8iq.easypanel.host/#duvidas",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é o crédito consignado?",
+          "acceptedAnswer": { "@type": "Answer", "text": "É um empréstimo com a parcela descontada diretamente da folha de pagamento ou do benefício, seja INSS, servidor ou militar. Por ter essa garantia, oferece as menores taxas de juros do mercado." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem pode contratar?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Aposentados e pensionistas do INSS, servidores públicos federais, estaduais e municipais, e militares das Forças Armadas. A contratação depende da margem consignável disponível e da análise de crédito." }
+        },
+        {
+          "@type": "Question",
+          "name": "Com quais bancos vocês trabalham?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Somos correspondentes de várias instituições e a nossa carteira não para nas que estão listadas no site. Entre elas estão C6 Consig, BMG, Santander, Safra, Mercantil, Banco Pan, Happy Consig, Facta, Daycoval, BRB, iCred, VCTex, Amigoz e Quero Mais Crédito, entre outras. Consultamos todas as que atendem o seu perfil e apresentamos a melhor condição." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais documentos preciso enviar?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Documento oficial com foto, CPF, comprovante de residência e o extrato ou contracheque do benefício. Tudo pode ser enviado por foto, pelo WhatsApp, sem precisar de cartório." }
+        },
+        {
+          "@type": "Question",
+          "name": "Em quanto tempo o dinheiro cai na conta?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Depois da aprovação e da assinatura digital, o banco faz o depósito direto na sua conta. O prazo varia conforme a instituição e o seu tipo de benefício, e o consultor informa o prazo exato antes de você assinar." }
+        },
+        {
+          "@type": "Question",
+          "name": "A Fiducial é um banco?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A Fiducial atua como correspondente bancário, intermediando a contratação junto a instituições financeiras autorizadas pelo Banco Central. Isso significa acesso a várias opções para encontrar a melhor condição para você." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><img decoding="async" width="620" height="197" src="fiducial-logo-claro.png" alt="Fiducial Consultoria e Serviços" /></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#modalidades">Modalidades</a></li>
+      <li><a href="#bancos">Bancos parceiros</a></li>
+      <li><a href="#vantagens">Vantagens</a></li>
+      <li><a href="#atendimento">Atendimento</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-phone">0800 000 0000</span>
+      <a class="btn btn-red" data-wa data-origem="cabecalho" data-msg="Olá! Vim pelo site e quero falar sobre crédito consignado.">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.7 3.3.4 1.4 1.3 2.7 1.5 2.9.2.2 2.6 4 6.3 5.5 2.3 1 3.2 1.1 4.4.9.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15l-1.3 4.7L7 20.4A10 10 0 1 0 12 2"/></svg>
+        Simular crédito
+      </a>
+      <!-- só aparece no celular, abre a lista de seções -->
+      <button class="nav-abrir" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu de seções">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-conteudo">
+      <h1>Crédito consignado sem burocracia e <span class="hl">sem sair de casa</span>.</h1>
+      <p class="lead">Taxas entre as menores do mercado e atendimento 100% digital, com a segurança de quem entende do assunto. Para aposentados, pensionistas, servidores públicos e militares.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-red btn-simular" data-wa data-origem="topo" data-msg="Olá! Quero simular meu crédito consignado.">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.7 3.3.4 1.4 1.3 2.7 1.5 2.9.2.2 2.6 4 6.3 5.5 2.3 1 3.2 1.1 4.4.9.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15l-1.3 4.7L7 20.4A10 10 0 1 0 12 2"/></svg>
+          Simular crédito
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#modalidades">Ver modalidades</a>
+      </div>
+      <p class="hero-obs">Simulação gratuita, sem compromisso e direto pelo WhatsApp.</p>
+
+      <div class="prova">
+        <div class="item"><div><b>500 mil</b><span>contratos administrados</span></div></div>
+        <div class="item"><div><b>27</b><span>estados atendidos</span></div></div>
+      </div>
+
+      <div class="hero-chips">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 6.5-7 9-4-2.5-7-5-7-9V6l7-3z"/></svg> Empresa certificada ISO 27001</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Conforme a LGPD</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg> Correspondente bancário</span>
+      </div>
+    </div>
+
+    <!--
+      LADO DIREITO DO TOPO
+      A imagem foi recortada sem fundo a partir de  modelo.png .
+      Serve  hero.webp , leve, com  hero.png  de reserva para navegador antigo.
+      Se os dois forem removidos, esta coluna some sozinha e o texto ocupa a largura toda.
+    -->
+    <div class="hero-figura" id="hero-figura">
+      <picture>
+        <source srcset="hero.webp" type="image/webp" />
+        <img decoding="async" src="hero.png" width="706" height="1167" fetchpriority="high"
+             alt="Aposentada simulando crédito consignado pelo celular" />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SIMULADOR =================
+     Fica logo abaixo do topo de propósito: é a primeira coisa depois da
+     promessa, para a pessoa ver um número antes de decidir se continua lendo.
+     O miolo do cartão é desenhado pelo simulador.js. Aqui fica só a moldura,
+     para o título e o texto existirem no código da página.
+     Não há formulário: nada é enviado, nada é guardado. -->
+<section class="section sim" id="simulador" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Simulador</span>
+      <h2>Faça uma simulação agora mesmo</h2>
+      <p>Arraste e veja a conta na hora. Sem cadastro, sem informar documento e sem compromisso.</p>
+    </div>
+    <div class="sim-wrap">
+      <div data-simulador="inss"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NÚMEROS ================= -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><div class="num" data-count="500">0</div><div class="lbl">mil contratos administrados</div></div>
+    <div class="stat"><div class="num" data-count="27">0</div><div class="lbl">estados atendidos no Brasil</div></div>
+  </div>
+</section>
+
+<!-- ================= BANCOS PARCEIROS ================= -->
+<section class="banks" id="bancos">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Bancos parceiros</span>
+      <h2>Trabalhamos com as maiores instituições do país</h2>
+      <p>Consultamos as condições de vários bancos ao mesmo tempo e apresentamos a melhor proposta para o seu perfil.</p>
+    </div>
+  </div>
+
+  <!--
+    LOGOS DOS BANCOS
+    Os arquivos ficam nesta mesma pasta, ao lado do index.html, com nome em minúsculas
+    e sem espaço. Todos já foram tratados: fundo branco virou transparência e as margens
+    vazias foram aparadas, para os logos terem peso visual parecido dentro do card.
+    Enquanto um arquivo não existir, aparece o nome da instituição em texto automaticamente.
+    A classe "folgado" continua disponível para logo que venha com muita margem interna.
+  -->
+  <div class="marquee">
+    <div class="marquee-track" id="bank-track">
+      <div class="bank"><img decoding="async" loading="lazy" width="520" height="103" src="c6-bank.png" alt="C6 Bank" data-nome="C6 Consig" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="520" height="217" src="bmg.png" alt="Banco BMG" data-nome="BMG" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="520" height="91" src="santander.png" alt="Santander" data-nome="Santander" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="1106" height="407" src="safra.svg" alt="Banco Safra" data-nome="Safra" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="630" height="350" src="mercantil.png" alt="Banco Mercantil" data-nome="Mercantil" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="300" height="141" src="pan.png" alt="Banco Pan" data-nome="Banco Pan" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="399" height="123" src="happy.png" alt="Happy Consig" data-nome="Happy Consig" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="191" height="44" src="facta.png" alt="Facta Financeira" data-nome="Facta" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="837" height="238" src="daycoval.png" alt="Banco Daycoval" data-nome="Daycoval" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="520" height="215" src="brb.png" alt="BRB" data-nome="BRB" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="520" height="124" src="icred.png" alt="iCred" data-nome="iCred" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="162" height="50" src="vctex.png" alt="VCTex" data-nome="VCTex" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="355" height="110" src="amigoz.png" alt="Amigoz" data-nome="Amigoz" /></div>
+      <div class="bank"><img decoding="async" loading="lazy" width="520" height="271" src="quero-mais-credito.png" alt="Quero Mais Crédito" data-nome="Quero Mais Crédito" /></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="foot">Não sabe qual banco oferece a melhor condição para você? Deixe que a gente compara.</p>
+    <div style="text-align:center;margin-top:18px">
+      <a class="btn btn-outline" data-wa data-origem="bancos" data-msg="Olá! Quero comparar as condições entre os bancos parceiros.">Comparar bancos pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODALIDADES ================= -->
+<section class="section" id="modalidades">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Modalidades</span>
+      <h2>Um consignado para cada perfil</h2>
+      <p>Escolha a sua linha e veja como funciona, com simulador e as perguntas de quem j&#225; passou por isso. Condições sujeitas à análise e à margem consignável disponível.</p>
+    </div>
+    <div class="cards">
+      <a class="card reveal" href="consignado-inss.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+        <h3>INSS</h3>
+        <p>Para aposentados e pensionistas do INSS. Uma das menores taxas do mercado, com desconto direto no benefício.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+      <a class="card reveal" href="consignado-clt.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+        <h3>CLT</h3>
+        <p>Para quem tem carteira assinada. Desconto direto na folha de pagamento e taxa bem menor que a do empr&#233;stimo pessoal.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+      <a class="card reveal" href="consignado-servidor-publico.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <h3>Servidor Público</h3>
+        <p>Federal, estadual e municipal. Margem ampliada e prazos estendidos para servidores efetivos.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+      <a class="card reveal" href="consignado-militar.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .8-4.5 4.2 1.2 6L12 16l-5.9 3 1.2-6L3 8.8 9 8z"/></svg></div>
+        <h3>Militar e Forças Armadas</h3>
+        <p>Exército, Marinha e Aeronáutica. Condições exclusivas para a ativa, reserva e pensionistas militares.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+      <a class="card reveal" href="portabilidade-consignado.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h13m0 0l-5-5m5 5l-5 5M20 5v14"/></svg></div>
+        <h3>Portabilidade</h3>
+        <p>Traga seu contrato de outro banco e pague menos. Reduza a taxa mantendo ou melhorando a sua parcela.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+      <a class="card reveal" href="refinanciamento-consignado.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg></div>
+        <h3>Refinanciamento</h3>
+        <p>Já tem consignado? Refinancie e libere dinheiro extra na conta, sem aumentar o valor da parcela.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+      <a class="card reveal" href="cartao-beneficio.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+        <h3>Cartão Benefício</h3>
+        <p>Crédito na hora com desconto em folha, saque disponível e uso onde quiser, sem anuidade.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+      <a class="card reveal" href="cartao-consignado.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></div>
+        <h3>Cartão Consignado</h3>
+        <p>Usa a margem do cartão de crédito consignado. Compras no crédito, saque em dinheiro e fatura descontada na folha.</p>
+        <span class="go">Ver como funciona <svg viewBox="0 0 24 24"><path d="M12 4l8 8-8 8-1.4-1.4 5.6-5.6H4v-2h12.2l-5.6-5.6z"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VANTAGENS ================= -->
+<section class="section adv" id="vantagens">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Por que a Fiducial</span>
+      <h2>Segurança de uma grande instituição, agilidade de quem é digital</h2>
+      <p>Somos uma das maiores empresas de crédito consignado do país. Aqui, o seu crédito é tratado com a mesma seriedade dos maiores bancos.</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div><h4>Taxas reduzidas</h4><p>Negociamos com os principais bancos para você pagar menos juros.</p></div>
+      </div>
+      <div class="adv-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <div><h4>Tudo pelo WhatsApp</h4><p>Do primeiro contato à assinatura. Sem filas, sem cartório, sem sair de casa.</p></div>
+      </div>
+      <div class="adv-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M15 10l-4 4-2-2"/></svg></div>
+        <div><h4>Nada antecipado</h4><p>Não cobramos depósito nem taxa para liberar o seu crédito. Nunca.</p></div>
+      </div>
+      <div class="adv-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <div><h4>Desconto em folha</h4><p>A parcela é descontada direto do benefício. Sem boleto e sem esquecer.</p></div>
+      </div>
+      <div class="adv-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 21v-2a4 4 0 0 0-3-3.9"/></svg></div>
+        <div><h4>Consultor de verdade</h4><p>Atendimento humano e especializado, do primeiro contato ao pós-venda.</p></div>
+      </div>
+      <div class="adv-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 6.5-7 9-4-2.5-7-5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><h4>Segurança e sigilo</h4><p>Certificação ISO 27001 e total conformidade com a LGPD. Seus dados protegidos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAIXA DE QUEBRA =================
+  Faixa de largura total com foto ao fundo. O texto fica na metade esquerda,
+  que é justamente onde a foto tem fundo desfocado e vazio.
+-->
+<section class="quebra">
+  <div class="wrap">
+    <div class="quebra-texto reveal">
+      <span class="eyebrow">Empréstimo seguro</span>
+      <h2>A Fiducial nunca pede depósito nem taxa adiantada para liberar crédito.</h2>
+      <p>Se alguém pedir dinheiro antes da liberação em nome da Fiducial, desconfie na hora e fale com a gente pelo canal oficial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="section" id="como">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do WhatsApp à sua conta em 4 passos</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h4>Chame no WhatsApp</h4><p>Toque em qualquer botão da página. O atendimento começa na hora, sem custo.</p></div>
+      <div class="step reveal"><div class="n">02</div><h4>Envie os documentos</h4><p>Só o essencial: documento com foto e comprovantes. Tudo pelo celular.</p></div>
+      <div class="step reveal"><div class="n">03</div><h4>Receba a melhor proposta</h4><p>Comparamos as condições dos bancos parceiros e apresentamos a melhor para você.</p></div>
+      <div class="step reveal"><div class="n">04</div><h4>Dinheiro na conta</h4><p>Assinou digitalmente? O valor é depositado direto na sua conta.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAIXA DE CTA ================= -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="band reveal">
+      <div>
+        <h2>Descubra quanto você pode contratar hoje</h2>
+        <p>Sem compromisso e sem pagar nada por isso. Um consultor Fiducial conversa com você agora mesmo pelo WhatsApp.</p>
+      </div>
+      <a class="btn btn-red btn-lg" data-wa data-origem="faixa-simulacao" data-msg="Olá! Quero descobrir quanto posso contratar de consignado.">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.7 3.3.4 1.4 1.3 2.7 1.5 2.9.2.2 2.6 4 6.3 5.5 2.3 1 3.2 1.1 4.4.9.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15l-1.3 4.7L7 20.4A10 10 0 1 0 12 2"/></svg>
+        Falar com um consultor
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ATENDIMENTO ================= -->
+<section class="section contact on-dark" id="atendimento">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Atendimento</span>
+      <h2>Vários jeitos de falar com a gente</h2>
+      <p>Escolha o canal que preferir. Todo o atendimento acontece pelo WhatsApp, com um consultor de verdade do outro lado.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="cbox reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.7 3.3.4 1.4 1.3 2.7 1.5 2.9.2.2 2.6 4 6.3 5.5 2.3 1 3.2 1.1 4.4.9.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15l-1.3 4.7L7 20.4A10 10 0 1 0 12 2"/></svg></div>
+        <h3>Quero contratar</h3>
+        <p>Primeira contratação, novo empréstimo ou cartão benefício. Fale com o time de vendas.</p>
+        <div class="num">(31) 97523 8397</div>
+        <a class="btn btn-red btn-block" data-wa data-origem="atendimento-vendas" data-msg="Olá! Quero contratar um crédito consignado.">Chamar vendas</a>
+      </div>
+
+      <div class="cbox reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7V4h2v5h-5V7h2.2A7 7 0 1 0 19 12z"/></svg></div>
+        <h3>Já sou cliente</h3>
+        <p>Portabilidade, refinanciamento, segunda via de contrato e acompanhamento de proposta.</p>
+        <div class="num">(31) 97523 8397</div>
+        <a class="btn btn-red btn-block" data-wa data-origem="atendimento-suporte" data-msg="Olá! Já sou cliente Fiducial e preciso de atendimento.">Chamar suporte</a>
+      </div>
+
+      <div class="cbox reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"/></svg></div>
+        <h3>Dúvidas e ouvidoria</h3>
+        <p>Informações sobre taxas, prazos, documentos ou qualquer outra questão sobre o seu contrato.</p>
+        <div class="num">0800 000 0000</div>
+        <a class="btn btn-red btn-block" data-wa data-origem="atendimento-duvidas" data-msg="Olá! Tenho uma dúvida sobre crédito consignado.">Tirar dúvida</a>
+      </div>
+    </div>
+
+    <div class="contact-strip reveal">
+      <div class="item">
+        <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2"/></svg>
+        <div><b>0800 000 0000</b><span>Central de atendimento</span></div>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10 6"/></svg>
+        <div><b>contato@fiducial.com.br</b><span>Envie a sua mensagem</span></div>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><b>Segunda a sexta, 8h às 18h</b><span>Horário de atendimento</span></div>
+      </div>
+      <a class="btn btn-red" data-wa data-origem="atendimento-faixa" data-msg="Olá! Vim pelo site da Fiducial.">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.7 3.3.4 1.4 1.3 2.7 1.5 2.9.2.2 2.6 4 6.3 5.5 2.3 1 3.2 1.1 4.4.9.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15l-1.3 4.7L7 20.4A10 10 0 1 0 12 2"/></svg>
+        Abrir o WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DÚVIDAS ================= -->
+<section class="section" id="duvidas">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Tudo o que você precisa saber</h2>
+    </div>
+    <div class="faq">
+      <div class="acc">
+        <button>O que é o crédito consignado?<span class="plus">+</span></button>
+        <div class="ans"><p>É um empréstimo com a parcela descontada diretamente da folha de pagamento ou do benefício, seja INSS, servidor ou militar. Por ter essa garantia, oferece as menores taxas de juros do mercado.</p></div>
+      </div>
+      <div class="acc">
+        <button>Quem pode contratar?<span class="plus">+</span></button>
+        <div class="ans"><p>Aposentados e pensionistas do INSS, servidores públicos federais, estaduais e municipais, e militares das Forças Armadas. A contratação depende da margem consignável disponível e da análise de crédito.</p></div>
+      </div>
+      <div class="acc">
+        <button>Com quais bancos vocês trabalham?<span class="plus">+</span></button>
+        <div class="ans"><p>Somos correspondentes de várias instituições e a nossa carteira não para nas que estão listadas no site. Entre elas estão C6 Consig, BMG, Santander, Safra, Mercantil, Banco Pan, Happy Consig, Facta, Daycoval, BRB, iCred, VCTex, Amigoz e Quero Mais Crédito, entre outras. Consultamos todas as que atendem o seu perfil e apresentamos a melhor condição.</p></div>
+      </div>
+      <div class="acc">
+        <button>Quais documentos preciso enviar?<span class="plus">+</span></button>
+        <div class="ans"><p>Documento oficial com foto, CPF, comprovante de residência e o extrato ou contracheque do benefício. Tudo pode ser enviado por foto, pelo WhatsApp, sem precisar de cartório.</p></div>
+      </div>
+      <div class="acc">
+        <button>Em quanto tempo o dinheiro cai na conta?<span class="plus">+</span></button>
+        <div class="ans"><p>Depois da aprovação e da assinatura digital, o banco faz o depósito direto na sua conta. O prazo varia conforme a instituição e o seu tipo de benefício, e o consultor informa o prazo exato antes de você assinar.</p></div>
+      </div>
+      <div class="acc">
+        <button>A Fiducial é um banco?<span class="plus">+</span></button>
+        <div class="ans"><p>A Fiducial atua como correspondente bancário, intermediando a contratação junto a instituições financeiras autorizadas pelo Banco Central. Isso significa acesso a várias opções para encontrar a melhor condição para você.</p></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px">
+      <p style="color:var(--grey);margin-bottom:18px">Ficou com outra dúvida? Um consultor responde na hora.</p>
+      <a class="btn btn-red btn-lg" data-wa data-origem="duvidas" data-msg="Olá! Tenho uma dúvida sobre crédito consignado.">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.7 3.3.4 1.4 1.3 2.7 1.5 2.9.2.2 2.6 4 6.3 5.5 2.3 1 3.2 1.1 4.4.9.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15l-1.3 4.7L7 20.4A10 10 0 1 0 12 2"/></svg>
+        Perguntar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RODAPÉ ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="logo"><img decoding="async" width="620" height="197" src="fiducial-logo-claro.png" alt="Fiducial Consultoria e Serviços" /></div>
+        <p>Crédito consignado com a segurança de uma das maiores empresas do setor no Brasil. Taxas reduzidas e atendimento pelo WhatsApp.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Modalidades</h5>
+        <a href="consignado-inss.html">Consignado INSS</a>
+        <a href="consignado-clt.html">Consignado CLT</a>
+        <a href="consignado-servidor-publico.html">Servidor público</a>
+        <a href="consignado-militar.html">Militar</a>
+        <a href="portabilidade-consignado.html">Portabilidade</a>
+        <a href="refinanciamento-consignado.html">Refinanciamento</a>
+        <a href="cartao-beneficio.html">Cartão benefício</a>
+        <a href="cartao-consignado.html">Cartão consignado</a>
+      </div>
+      <div class="foot-col">
+        <h5>Institucional</h5>
+        <a href="#vantagens">Sobre a Fiducial</a>
+        <a href="#bancos">Bancos parceiros</a>
+        <a href="#como">Como funciona</a>
+        <a href="#duvidas">Dúvidas frequentes</a>
+        <!-- Documentos oficiais da Fiducial, no site institucional. Mesma pessoa
+             jurídica desta landing, CNPJ 22.440.788/0001.90, conferido no rodapé
+             de fiducial.com.br. -->
+        <a href="https://fiducial.com.br/storage/2025/07/Politica-de-Privacidade-1.pdf" target="_blank" rel="noopener">Política de privacidade</a>
+        <a href="https://fiducial.com.br/lgpd/" target="_blank" rel="noopener">LGPD</a>
+      </div>
+      <div class="foot-col">
+        <h5>Atendimento</h5>
+        <a data-wa data-origem="rodape-vendas" data-msg="Olá! Quero falar com o time de vendas.">WhatsApp de vendas</a>
+        <a data-wa data-origem="rodape-suporte" data-msg="Olá! Já sou cliente e preciso de suporte.">WhatsApp de suporte</a>
+        <p>0800 000 0000</p>
+        <p>contato@fiducial.com.br</p>
+        <p>Segunda a sexta, 8h às 18h</p>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <p><strong>Fiducial Consultoria e Serviços</strong>, CNPJ 22.440.788/0001.90. A Fiducial atua como correspondente bancário, nos termos da Resolução CMN nº 4.935/2021, intermediando a contratação de produtos e serviços de instituições financeiras autorizadas pelo Banco Central do Brasil. Não realizamos cobrança de valores antecipados para liberação de crédito. As condições, taxas e prazos apresentados são meramente ilustrativos e estão sujeitos à análise de crédito, à margem consignável disponível e às políticas de cada instituição parceira. O Custo Efetivo Total é informado no momento da contratação. As marcas e logotipos das instituições financeiras citadas pertencem aos seus respectivos titulares.</p>
+      <div class="bar">
+        <span>© 2026 Fiducial. Todos os direitos reservados.</span>
+        <span>Empréstimo consciente. Avalie a sua real capacidade de pagamento.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP FLUTUANTE ================= -->
+<a class="wa-float" data-wa data-origem="botao-flutuante" data-msg="Olá! Vim pelo site e quero falar sobre crédito consignado." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2-.7 3.3.4 1.4 1.3 2.7 1.5 2.9.2.2 2.6 4 6.3 5.5 2.3 1 3.2 1.1 4.4.9.7-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15l-1.3 4.7L7 20.4A10 10 0 1 0 12 2"/></svg>
+  <span>Simular crédito</span>
+</a>
+
+<script src="script.js"></script>
+<script src="simulador.js"></script>
+</body>
+</html>

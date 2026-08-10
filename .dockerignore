@@ -1,0 +1,7 @@
+Dockerfile
+.dockerignore
+*.zip
+CONTEXTO.md
+modelo.png
+teste-cabecalho.html
+.claude
