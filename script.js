@@ -9,7 +9,7 @@
    sem sinais e sem espaços: 55 + DDD + número.
    Exemplo para (11) 99999 9999  =  5511999999999
    ========================================================== */
-const WHATSAPP_NUMBER = "5531975238397";
+const WHATSAPP_NUMBER = "5531975313798";
 
 /* Mensagem pronta na conversa. Com false, o botão abre a conversa em branco e
    o link fica sendo só wa.me + número, sem nada depois.
