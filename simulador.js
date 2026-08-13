@@ -142,7 +142,9 @@ const SIMULADOR = {
            pessoa realmente lê antes de clicar. */
         '<div class="sim-alerta">' +
           '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>' +
-          '<p><b>Atenção:</b> esta é uma simulação. Fale com um consultor para confirmar o valor exato e as condições do seu caso.</p>' +
+          '<p><b>Atenção:</b> as taxas e condições simuladas são indicativas, sujeitas a alteração e à ' +
+          'análise de crédito do banco. A contratação só é efetivada após o contato e confirmação com ' +
+          'um de nossos consultores.</p>' +
         '</div>' +
 
         '<div class="sim-cta">' +

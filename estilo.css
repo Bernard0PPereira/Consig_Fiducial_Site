@@ -341,9 +341,15 @@ header.menu-aberto .nav-abrir span:nth-child(3){transform:translateY(-7px) rotat
   display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
   background:var(--faixa-cartao);border:1px solid var(--faixa-linha);border-radius:var(--radius);padding:26px 30px;
 }
-.contact-strip .item{display:flex;align-items:center;gap:13px}
+/* min-width:0 porque item de flex nao encolhe abaixo do conteudo sem isto, e
+   overflow-wrap porque e mail e telefone sao palavras sem espaco: se nao
+   puderem quebrar, vazam da faixa e criam rolagem lateral no celular.
+   Com vendasconsignados@fiducial.com.br sao 254px de texto contra 218px de
+   espaco util numa tela de 360px. Vale para qualquer contato mais longo que
+   entre aqui depois. */
+.contact-strip .item{display:flex;align-items:center;gap:13px;min-width:0}
 .contact-strip .item svg{width:21px;height:21px;stroke:var(--red);fill:none;stroke-width:2;flex:none}
-.contact-strip .item b{display:block;color:var(--faixa-titulo);font-family:var(--font-display);font-size:.98rem}
+.contact-strip .item b{display:block;color:var(--faixa-titulo);font-family:var(--font-display);font-size:.98rem;overflow-wrap:anywhere}
 .contact-strip .item span{font-size:.84rem;color:rgba(255,255,255,.6)}
 
 /* ---------- FAQ ---------- */
@@ -363,6 +369,12 @@ header.menu-aberto .nav-abrir span:nth-child(3){transform:translateY(-7px) rotat
 /* ---------- Rodapé ---------- */
 footer{background:var(--faixa);color:var(--faixa-texto);padding:70px 0 30px;font-size:.92rem}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--faixa-linha)}
+/* Mesmo motivo do .contact-strip: item de grade nao encolhe abaixo do conteudo
+   sem min-width:0, e o e mail e uma palavra sem espaco. Sem estas duas linhas a
+   coluna do rodape fica do tamanho do e mail, empurra a grade para 415px numa
+   tela de 345px e o site inteiro anda de lado no celular. */
+.foot-col{min-width:0}
+.foot-col a,.foot-col p{overflow-wrap:anywhere}
 .foot-grid .logo{margin-bottom:18px}
 .foot-grid .logo img{height:48px}
 .foot-col h5{font-family:var(--font-display);color:var(--faixa-titulo);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:16px}
@@ -447,6 +459,12 @@ footer{background:var(--faixa);color:var(--faixa-texto);padding:70px 0 30px;font
   .wa-float{padding:16px;border-radius:50%}
   .quebra-texto{padding:52px 0}
   .quebra::before{background:linear-gradient(180deg,rgba(43,43,43,.94) 0%,rgba(43,43,43,.88) 100%)}
+}
+/* Em tela estreita o rodape vira uma coluna so. Em duas colunas cada uma fica
+   com uns 128px, e ai o e mail de atendimento quebra no meio da palavra. Com
+   a largura inteira ele cabe numa linha. */
+@media(max-width:560px){
+  .foot-grid{grid-template-columns:1fr;gap:34px}
 }
 /* ==========================================================================
    SIMULADOR DE CREDITO
